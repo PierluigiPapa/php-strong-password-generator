@@ -11,9 +11,9 @@
 <body class="bg-primary">
 
 <div class="container">
-    <h1 class="text-center fs-1 my-3 text-white">GENERA UNA PASSWORD</h1>
+    <h1 class="text-center fs-1 my-3 text-light">GENERA UNA PASSWORD</h1>
 
-    <div class="row">
+    <div class="row border border-light">
         <form action="index.php" method="get">
             <div class="col-6 mx-auto">
                 <label for="lenght" class="form-label text-light fw-bold fs-3 my-3 py-3">Caratteri per generare la password</label>
