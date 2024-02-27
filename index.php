@@ -32,12 +32,12 @@ require __DIR__ .'/partials/functions.php'
             <div class="col-6 d-flex justify-content-between mx-auto my-3">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" name="letters" id="defaultFlexControl">
-                    <label class="form-check-label" for="defaultFlexControl"> Solo Lettere </label>
+                    <label class="form-check-label" for="defaultFlexControl"> Solo lettere </label>
                 </div>
 
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" name="numbers" id="flexCheckVerified">
-                    <label class="form-check-label" for="defaultFlexControl"> Solo Numeri </label>
+                    <label class="form-check-label" for="defaultFlexControl"> Solo numeri </label>
                 </div>
 
                 <div class="form-check">
