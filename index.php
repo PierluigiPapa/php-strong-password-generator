@@ -27,7 +27,7 @@ require __DIR__ .'/partials/functions.php'
                 <input type="number" class="form-control" id="lenght" name="length" required min="4" max="24" placeholder="Inserisci un numero da 4 a 24">
             </div>
 
-            <!-- <h3 class="text-light fw-bold fs-3 my-3 py-3 text-center">Seleziona tra queste opzioni:</h3>
+            <h3 class="text-light fw-bold fs-3 my-3 py-3 text-center">Seleziona tra queste opzioni:</h3>
 
             <div class="col-6 d-flex justify-content-between mx-auto my-3">
                 <div class="form-check">
@@ -49,7 +49,7 @@ require __DIR__ .'/partials/functions.php'
                     <input class="form-check-input" type="checkbox" value="" name="norepeat" id="flexCheckVerified">
                     <label class="form-check-label" for="defaultFlexControl"> Non ripetere i caratteri </label>
                 </div>
-            </div> -->
+            </div>
             <div class="text-center py-3">
                 <button class="btn btn-light rounded-5">
                     GENERA PASSWORD
@@ -60,10 +60,9 @@ require __DIR__ .'/partials/functions.php'
     <div class="text-center my-5">
         
         <?php
-        
-        if(isset($_GET['length'])){
-            echo '<h2 class="text-light fw-bold">La tua password è: '.generateRandomPassword($_GET['length']).'</h2>'; 
-        }
+            if(isset($_GET['length']) && $_GET['length'] >= 4 && $_GET['length'] <= 24 ) {
+                header('Location: ./partials/passwordgenerate.php'); 
+            }
 
         ?>
     </div>

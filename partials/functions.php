@@ -1,5 +1,7 @@
 <?php
-//Creazione della password generata attraverso una funzione
+    session_start();
+    if(isset($_GET['length']) && $_GET['length'] >= 4 && $_GET['length'] <= 24 )
+    //Creazione della password generata attraverso una funzione
     if(isset($_GET['length'])){
         function generateRandomPassword($length){
             //Dichiaro una stringa di caratteri
@@ -16,5 +18,7 @@
             };
             return $password;
         }
+        
+        $_SESSION['finalpassword'] = generateRandomPassword($_GET['length']);
     }
 ?> 
