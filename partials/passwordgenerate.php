@@ -16,6 +16,7 @@ session_start();
 </head>
 <body class="bg-primary">
     <div class="container">
+        <!-- // SECTION CARD PASSWORD // -->
         <div class="row border border-1 my-4">
             <h1 class="text-center text-light my-4">PASSWORD GENERATA</h1>
             
@@ -24,6 +25,7 @@ session_start();
             <span class="text-center text-light fs-5 d-block mx-auto my-4"><?php echo $_SESSION['finalpassword']; ?></span>
 
         </div>
+        <!-- // SECTION CARD PASSWORD // -->
     </div>
     
 

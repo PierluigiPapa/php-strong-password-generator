@@ -21,6 +21,7 @@ require __DIR__ .'/partials/functions.php'
     <h1 class="text-center fs-1 my-3 text-light">GENERA UNA PASSWORD</h1>
 
     <div class="row border border-light">
+        <!-- // SECTION FORM //-->
         <form action="index.php" method="get">
             <div class="col-6 mx-auto">
                 <label for="lenght" class="form-label text-light fw-bold fs-3 my-3 py-3">Caratteri per generare la password</label>
@@ -56,6 +57,7 @@ require __DIR__ .'/partials/functions.php'
                 </button>
             </div>
         </form>
+        <!--// SECTION FORM // -->
     </div>
     <div class="text-center my-5">
         
