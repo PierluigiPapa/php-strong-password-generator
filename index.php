@@ -63,7 +63,7 @@ require __DIR__ .'/partials/functions.php'
         
         <?php
             if(isset($_GET['length']) && $_GET['length'] >= 4 && $_GET['length'] <= 24 ) {
-                header('Location: ./partials/passwordgenerate.php'); 
+                header('Location: ./partials/passwordGenerate.php'); 
             }
 
         ?>
